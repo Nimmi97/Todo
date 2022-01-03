@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 10px;
+  background-color: black;
+}
+.wrapper {
+  background: #fff;
+  max-width: 500px;
+  width: 100%;
+  margin: 120px auto;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+.head {
+  background-color: #34a4eb;
+  height: 40px;
+  text-align: center;
+  padding: 5px;
+  color: #fff;
+  font-size: 30px;
+}
+.wrapper .inputField {
+  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  height: 45px;
+}
+
+.inputField input {
+  width: 85%;
+  height: 100%;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 17px;
+  padding-left: 15px;
+}
+.inputField button {
+  width: 50px;
+  height: 100%;
+  margin-left: 5px;
+  font-size: 21px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.wrapper .todoList {
+  max-height: 250px;
+  overflow-y: auto;
+}
+.todoList li {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  padding: 10px 15px;
+  background-color: white;
+  border: 0.5px solid black;
+}
+.todoList li .icon {
+  float: right;
+  right: 20px;
+  top: 50%;
+  background: #e74c3c;
+  width: 45px;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+.todoList li:hover .icon {
+  right: 0px;
+}
